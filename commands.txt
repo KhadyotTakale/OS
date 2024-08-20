@@ -1,0 +1,67 @@
+ls:List directory contents
+cd:Change the shell working directory
+mkdir:Make directories
+rmdir:Remove empty directories
+touch:Change file timestamps
+rm:Remove files or directories
+cp:Copy files and directories
+mv:Move or rename files or directories
+open:Open files
+chmod:Change file modes or Access Control Lists
+chown:Change file owner and group
+kill:Send a signal to a process
+ps:Report a snapshot of current processes
+pwd:Print working directory
+man:Display the manual for a command
+echo:Display a line of text
+cat:Concatenate and display files
+more:View file contents one screen at a time
+less:View file contents with backward movement
+grep:Search for patterns in files
+find:Search for files in a directory hierarchy
+du:Estimate file space usage
+df:Report file system disk space usage
+which:Locate a command
+whoami:Print the current user ID and name
+date:Display or set the system date and time
+cal:Display a calendar
+nano:Edit files in the Nano text editor
+vi:Edit files in the Vi text editor
+emacs:Edit files in the Emacs text editor
+curl:Transfer data from or to a server
+wget:Non-interactive network downloader
+ping:Send ICMP ECHO_REQUEST to network hosts
+traceroute:Print the route packets take to the network host
+ssh:OpenSSH client for remote login
+scp:Secure copy (remote file copy program)
+sftp:Secure File Transfer Protocol
+ftp:File Transfer Protocol client
+tar:Archiving utility
+gzip:Compress files
+gunzip:Uncompress files
+zip:Package and compress (archive) files
+unzip:Extract compressed files
+bzip2:Compress files using Burrows-Wheeler block sorting text compression
+bunzip2:Uncompress files using Burrows-Wheeler block sorting text compression
+xz:Compress files using LZMA/LZMA2 algorithm
+unxz:Uncompress files using LZMA/LZMA2 algorithm
+7z:Compress files using 7-zip algorithm
+awk:Pattern scanning and processing language
+sed:Stream editor for filtering and transforming text
+perl:Perl language interpreter
+python:Python language interpreter
+ruby:Ruby language interpreter
+java:Java application launcher
+javac:Java compiler
+node:Node.js JavaScript runtime
+npm:Node.js package manager
+brew:Homebrew package manager
+sudo:Execute a command as another user
+su:Substitute user identity
+passwd:Change user password
+ifconfig:Configure network interfaces
+networksetup:Configure network settings
+systemsetup:Configure system settings
+diskutil:Manage disks and volumes
+pmset:Power management settings
+defaults:Modify
