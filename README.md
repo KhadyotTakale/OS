@@ -16,6 +16,6 @@ AutoSuggest is a command-line tool written in C++ that provides command suggesti
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/YourUsername/YourRepository.git
-   cd YourRepository
+   git clone https://github.com/KhadyotTakale/autosuggest_commandCompletion.git
+   cd autosuggest_commandCompletion
    ```
