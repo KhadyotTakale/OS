@@ -6,7 +6,6 @@
 #include <sstream>
 #include <algorithm>
 
-
 using namespace std;
 
 class TrieNode {
@@ -57,32 +56,6 @@ public:
         search(node, prefix, suggestions);
         return suggestions;
     }
-
-    void getSuggestionsWithSubstring(TrieNode* node, const string& current, const string& substring, vector<string>& suggestions) {
-        if (node->isEndOfWord && current.find(substring) != string::npos) {
-            suggestions.push_back(current);
-        }
-        for (auto it : node->children) {
-            getSuggestionsWithSubstring(it.second, current + it.first, substring, suggestions);
-        }
-    }
-
-    vector<string> getSuggestionsWithSubstring(const string& substring) {
-        vector<string> suggestions;
-        getSuggestionsWithSubstring(root, "", substring, suggestions);
-        return suggestions;
-    }
-
-    vector<string> getAllMatches(const string& query) {
-        vector<string> suggestions = getSuggestions(query);
-        vector<string> substringMatches = getSuggestionsWithSubstring(query);
-
-        suggestions.insert(suggestions.end(), substringMatches.begin(), substringMatches.end());
-        sort(suggestions.begin(), suggestions.end());
-        suggestions.erase(unique(suggestions.begin(), suggestions.end()), suggestions.end());
-
-        return suggestions;
-    }
 };
 
 vector<pair<string, string>> loadCommands(const string& filename) {
@@ -109,10 +82,10 @@ int main() {
     }
 
     string input;
-    cout << "Enter command: ";
-    cin >> input;
+    cout << "Enter command prefix: ";
+    getline(cin, input);
 
-    vector<string> suggestions = trie.getAllMatches(input);
+    vector<string> suggestions = trie.getSuggestions(input);
 
     if (!suggestions.empty()) {
         cout << "Did you mean:\n";
